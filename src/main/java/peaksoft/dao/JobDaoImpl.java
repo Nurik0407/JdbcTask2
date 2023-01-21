@@ -87,7 +87,7 @@ public class JobDaoImpl implements JobDao {
     public Job getJobByEmployeeId(Long employeeId) {
         Job job = new Job();
 String sql = """
-        select * from jobs join employees e in e.jobId = jobs.id where e.id = ?;
+        select * from jobs join employees e on e.jobId = jobs.id where e.id = ?;
         """;
 try (PreparedStatement preparedStatement = connection.prepareStatement(sql)){
     preparedStatement.setLong(1,employeeId);

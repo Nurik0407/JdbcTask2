@@ -79,13 +79,13 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", age=" + age +
-                ", email='" + email + '\'' +
-                ", jobId=" + jobId +
-                '}';
+        return "\nEmployee" +
+                "\nid: " + id +
+                "\nfirstName: " + firstName +
+                "\nlastName: " + lastName +
+                "\nage: " + age +
+                "\nemail: " + email +
+                "\njobId: " + jobId +
+                "\n~~~~~~~~~~~~~~~~~~~~\n";
     }
 }
